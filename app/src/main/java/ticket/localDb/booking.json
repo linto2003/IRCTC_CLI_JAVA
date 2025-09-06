@@ -1,0 +1,8 @@
+[ {
+  "bookingId" : "3b88e721-26e7-47bf-9698-54e923a5a678",
+  "trainId" : "T002",
+  "userId" : "user123",
+  "seatNumber" : "B1-02",
+  "bookingDate" : [ 2025, 9, 6, 23, 59, 46, 63580100 ],
+  "status" : "CANCELLED"
+} ]

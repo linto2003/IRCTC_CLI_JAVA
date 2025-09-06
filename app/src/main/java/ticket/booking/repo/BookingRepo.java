@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookingRepo {
-    private static final String FILE_PATH = "src/main/resources/booking.json";
+    private static final String FILE_PATH = "D:\\JAVA\\TicketBooking\\app\\src\\main\\java\\ticket\\localDb\\booking.json";;
     private final ObjectMapper mapper = new ObjectMapper().registerModule(new JavaTimeModule());
 
     public List<Booking> loadBookings() {

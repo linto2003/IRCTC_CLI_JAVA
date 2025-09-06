@@ -5,11 +5,11 @@
   "destination" : "Mumbai",
   "departureTime" : "2025-08-25T08:30:00",
   "arrivalTime" : "2025-08-25T20:45:00",
-  "schedule" : {
+  "schedule" : [ {
     "stationName" : "Chennai Central",
     "departureTime" : "2025-08-25T08:30:00",
     "arrivalTime" : "2025-08-25T08:00:00"
-  },
+  } ],
   "seats" : [ {
     "seatNumber" : "A1-01",
     "seatType" : "UPPER",
@@ -30,16 +30,16 @@
   "destination" : "Kolkata",
   "departureTime" : "2025-08-26T06:00:00",
   "arrivalTime" : "2025-08-26T18:30:00",
-  "schedule" : {
+  "schedule" : [ {
     "stationName" : "New Delhi",
     "departureTime" : "2025-08-26T06:00:00",
     "arrivalTime" : "2025-08-26T05:45:00"
-  },
+  } ],
   "seats" : [ {
     "seatNumber" : "B1-01",
     "seatType" : "MIDDLE",
     "coachNumber" : "B1",
-    "available" : true
+    "available" : false
   }, {
     "seatNumber" : "B1-02",
     "seatType" : "UPPER",
@@ -55,8 +55,8 @@
   "destination" : "Mumbai",
   "departureTime" : "2025-08-25T09:30:00",
   "arrivalTime" : "2025-08-25T20:45:00",
-  "schedule" : null,
-  "seats" : null,
+  "schedule" : [ ],
+  "seats" : [ ],
   "trainType" : "EXPRESS",
   "trainNumber" : "12345"
 } ]

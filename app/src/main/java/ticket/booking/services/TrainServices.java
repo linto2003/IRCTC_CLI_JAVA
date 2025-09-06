@@ -22,6 +22,8 @@ public class TrainServices {
 
     public TrainServices(){
         trains = trainRepo.loadTrains();
+        System.out.println("Trains loaded");
+        System.out.println(trains.size());
     }
     //USER FUNCTIONS
     public Train getTrain(String id){
@@ -31,6 +33,7 @@ public class TrainServices {
     }
 
     public List<Train> searchTrains(String sourceLocation, String destinationLocation){
+        System.out.println(trains);
         return trains.stream().filter(t->t.getSource().equals(sourceLocation) && t.getDestination().equals(destinationLocation)).collect(Collectors.toList());
     }
 

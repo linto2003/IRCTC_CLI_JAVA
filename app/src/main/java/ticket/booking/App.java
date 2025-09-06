@@ -57,7 +57,8 @@ public class App {
         String source = scanner.nextLine();
         System.out.print("Enter destination: ");
         String destination = scanner.nextLine();
-
+        source = source.trim();
+        destination = destination.trim();
         List<Train> trains = trainServices.searchTrains(source, destination);
         if (trains.isEmpty()) {
             System.out.println("No trains found!");
