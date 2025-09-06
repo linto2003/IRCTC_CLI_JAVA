@@ -1,0 +1,79 @@
+[
+  {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "password": "plain_password_123",
+    "hashPassword": "hashed_password_123",
+    "userId": "U001",
+    "tickets": [
+      {
+        "ticketId": "T1001",
+        "issueDate": "2025-07-31T10:00:00Z",
+        "travelDate": "2025-08-05T09:00:00Z",
+        "seatNumber": "A12",
+        "price": 150.0,
+        "passengersSeats": [
+          {
+            "passenger": {
+              "passengerId": "P001",
+              "name": "John Doe",
+              "age": 30,
+              "privilage": "None"
+            },
+            "seat": {
+              "seatNumber": "A12",
+              "seatType": "Sleeper",
+              "isAvailable": false,
+              "coachNumber": "C1"
+            }
+          }
+        ],
+        "source": "CityA",
+        "destination": "CityB",
+        "train": {
+          "trainId": "TR001",
+          "trainName": "Express Line",
+          "source": "CityA",
+          "destination": "CityB",
+          "departureTime": "2025-08-05T09:00:00Z",
+          "arrivalTime": "2025-08-05T15:00:00Z",
+          "schedule": {
+            "CityA": "2025-08-05T09:00:00Z",
+            "StationX": "2025-08-05T10:00:00Z",
+            "StationY": "2025-08-05T11:30:00Z",
+            "StationZ": "2025-08-05T13:00:00Z",
+            "CityB": "2025-08-05T15:00:00Z"
+          },
+          "seats": [
+            {
+              "seatNumber": "A12",
+              "seatType": "Sleeper",
+              "isAvailable": false,
+              "coachNumber": "C1"
+            },
+            {
+              "seatNumber": "A13",
+              "seatType": "Sleeper",
+              "isAvailable": true,
+              "coachNumber": "C1"
+            },
+            {
+              "seatNumber": "B01",
+              "seatType": "AC",
+              "isAvailable": true,
+              "coachNumber": "C2"
+            },
+            {
+              "seatNumber": "B02",
+              "seatType": "AC",
+              "isAvailable": true,
+              "coachNumber": "C2"
+            }
+          ],
+          "trainType": "Express",
+          "trainNumber": "12345"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[ {
+  "trainId" : "T001",
+  "trainName" : "Chennai Express",
+  "source" : "Chennai",
+  "destination" : "Mumbai",
+  "departureTime" : "2025-08-25T08:30:00",
+  "arrivalTime" : "2025-08-25T20:45:00",
+  "schedule" : {
+    "stationName" : "Chennai Central",
+    "departureTime" : "2025-08-25T08:30:00",
+    "arrivalTime" : "2025-08-25T08:00:00"
+  },
+  "seats" : [ {
+    "seatNumber" : "A1-01",
+    "seatType" : "UPPER",
+    "coachNumber" : "A1",
+    "available" : true
+  }, {
+    "seatNumber" : "A1-02",
+    "seatType" : "LOWER",
+    "coachNumber" : "A1",
+    "available" : false
+  } ],
+  "trainType" : "EXPRESS",
+  "trainNumber" : "12345"
+}, {
+  "trainId" : "T002",
+  "trainName" : "Delhi Superfast",
+  "source" : "Delhi",
+  "destination" : "Kolkata",
+  "departureTime" : "2025-08-26T06:00:00",
+  "arrivalTime" : "2025-08-26T18:30:00",
+  "schedule" : {
+    "stationName" : "New Delhi",
+    "departureTime" : "2025-08-26T06:00:00",
+    "arrivalTime" : "2025-08-26T05:45:00"
+  },
+  "seats" : [ {
+    "seatNumber" : "B1-01",
+    "seatType" : "MIDDLE",
+    "coachNumber" : "B1",
+    "available" : true
+  }, {
+    "seatNumber" : "B1-02",
+    "seatType" : "UPPER",
+    "coachNumber" : "B1",
+    "available" : true
+  } ],
+  "trainType" : "SUPERFAST",
+  "trainNumber" : "54321"
+}, {
+  "trainId" : "111",
+  "trainName" : "Shatabdi Express",
+  "source" : "Delhi",
+  "destination" : "Mumbai",
+  "departureTime" : "2025-08-25T09:30:00",
+  "arrivalTime" : "2025-08-25T20:45:00",
+  "schedule" : null,
+  "seats" : null,
+  "trainType" : "EXPRESS",
+  "trainNumber" : "12345"
+} ]
