@@ -24,32 +24,31 @@ public class UserBookingService {
     }
 
     // BOOK A SEAT
-    public Booking bookSeat(String trainId, String seatNumber, String userId) {
+    public Booking bookSeat(String trainId, String userId) {
         Train train = trainServices.getTrain(trainId);
         if (train == null) {
             System.out.println("Train not found!");
             return null;
         }
 
-        Seat seat = train.getSeats().stream()
-                .filter(s -> s.getSeatNumber().equals(seatNumber) && s.isAvailable())
-                .findFirst().orElse(null);
 
-        if (seat == null) {
-            System.out.println("Seat not available!");
-            return null;
-        }
+        Seat seat = train.getSeats().stream().filter(s->s.isAvailable()).findFirst().orElse(null);
+           if (seat == null) {
+               System.out.println("Seat not found!");
+               return null;
+           }
+
 
         // Mark seat as booked
         seat.setAvailable(false);
         trainServices.updateSeat(trainId, seat, true);
-
+        System.out.println("Seat booked!"+seat.getSeatNumber());
         // Create booking
         Booking booking = new Booking(
                 UUID.randomUUID().toString(),
                 trainId,
                 userId,
-                seatNumber,
+                seat.getSeatNumber(),
                 LocalDateTime.now(),
                 Booking.Status.BOOKED
         );

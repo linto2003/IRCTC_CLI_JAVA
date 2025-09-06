@@ -75,12 +75,10 @@ public class App {
     private static void bookSeat(TrainServices trainServices, UserBookingService bookingService, String userId) {
         System.out.print("Enter TrainId: ");
         String trainId = scanner.nextLine();
-        System.out.print("Enter Seat Number: ");
-        String seatNumber = scanner.nextLine();
 
-        Booking booking = bookingService.bookSeat(trainId, seatNumber, userId);
+        Booking booking = bookingService.bookSeat(trainId, userId);
         if (booking != null) {
-            System.out.println("Booking successful! BookingId: " + booking.getBookingId());
+            System.out.println("Booking successful! BookingId: " + booking.getBookingId() );
         } else {
             System.out.println("Booking failed!");
         }

@@ -44,7 +44,7 @@
     "seatNumber" : "B1-02",
     "seatType" : "UPPER",
     "coachNumber" : "B1",
-    "available" : true
+    "available" : false
   } ],
   "trainType" : "SUPERFAST",
   "trainNumber" : "54321"

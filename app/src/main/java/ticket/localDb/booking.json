@@ -5,4 +5,18 @@
   "seatNumber" : "B1-02",
   "bookingDate" : [ 2025, 9, 6, 23, 59, 46, 63580100 ],
   "status" : "CANCELLED"
+}, {
+  "bookingId" : "e9aefed2-2ae0-4f34-84d9-5d987472245e",
+  "trainId" : "T002",
+  "userId" : "user123",
+  "seatNumber" : "B1-01",
+  "bookingDate" : [ 2025, 9, 7, 0, 6, 5, 117955500 ],
+  "status" : "BOOKED"
+}, {
+  "bookingId" : "04ec4908-1067-47a9-bb79-ab0894ad2a47",
+  "trainId" : "T002",
+  "userId" : "user123",
+  "seatNumber" : "B1-02",
+  "bookingDate" : [ 2025, 9, 7, 0, 10, 0, 743881500 ],
+  "status" : "BOOKED"
 } ]
